@@ -1,0 +1,20 @@
+{
+  "name": "clicker_game_test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://andreytsapkov.github.io/clicker_game_test",
+  "main": "index.js",
+  "scripts": {
+    "start": "start index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreytsapkov/clicker_game_test.git"
+  },
+  "keywords": [],
+  "author": "Andrii Tsapkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreytsapkov/clicker_game_test/issues"
+  }
+}
