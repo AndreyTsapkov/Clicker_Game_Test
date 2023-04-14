@@ -23,7 +23,9 @@ const onFormSumbit = (event) => {
     const { name } = field;
 
     if (name) {
-      document.querySelector("error__message").classList.add("is-hidden");
+      const error = document.querySelector(".error__message");
+      console.log(error.classList);
+      error.classList.add("is-hidden");
       const { value } = field;
       userData[name] = value;
     }
@@ -43,14 +45,14 @@ const onFormSumbit = (event) => {
   }
 
   if (!checkForm) {
-    document.querySelector(".error_message").classList.remove("is-hidden");
+    document.querySelector(".error__message").classList.remove("is-hidden");
   }
   if (checkForm) {
     refs.userName.textContent = `${userData.name}`;
     localStorage.setItem("user", JSON.stringify(userData));
     refs.userLogOut.classList.remove("is-hidden");
     modalClose(refs.modalRegBackdrop);
-    document.querySelector(".error_message").classList.add("is-hidden");
+    document.querySelector(".error__message").classList.add("is-hidden");
     refs.userLogOut.addEventListener("click", onLogout);
   }
 };

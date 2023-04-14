@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header>
-      <span>Nickname</span>
+    <header class="header">
+      <div class="user_score">
+        <p class="user_score-1">Your score: <span></span></p>
 
-      <p>Your score: <span></span></p>
+        <p class="user_score-1">Level: <span></span></p>
 
-      <p>Level: <span></span></p>
-
-      <p>Monster`s HP: <span></span></p>
+        <p class="user_score-1">Monster`s HP: <span></span></p>
+      </div>
 
       <div class="user_thumb">
         <div class="user">
@@ -31,11 +31,13 @@
     </header>
 
     <main>
-      <div class="backdrop is-hidden modalReg__backdrop"></div>
+      <div class="backdrop modalReg__backdrop is-hidden"></div>
       <div class="backdrop is-hidden scoreModal__backdrop"></div>
       <div class="backdrop is-hidden gameOver__backdrop"></div>
 
-      <div class="game"></div>
+      <div class="game">
+        <div class="monster"></div>
+      </div>
     </main>
 
     <footer></footer>

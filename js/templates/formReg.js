@@ -27,7 +27,7 @@ const formReg = () => {
                     <div>
                         <button type="button" class="button button__modal-submit">Register</button>
                     </div>
-                    <div class = "error__message is-hidden">
+                    <div class="error__message is-hidden">
                         Please, fill all fields
                     </div>
                 </form>`;

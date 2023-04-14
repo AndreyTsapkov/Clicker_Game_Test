@@ -1,5 +1,7 @@
 const refs = {
   game: document.querySelector(".game"),
+  body: document.querySelector("main"),
+  monster: document.querySelector(".monster"),
 
   modalRegBackdrop: document.querySelector(".modalReg__backdrop"),
   scoreModalBackdrop: document.querySelector(".scoreModal__backdrop"),
