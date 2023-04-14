@@ -1,9 +1,9 @@
 const formReg = () => {
   return `<div class="modal regModal">
                 <h2 class="modal_subtitle regModal_subtitle">
-                    WellCome!
+                    Welсome!
                 </h2>
-                <h3 class="modal_title">Please, registry for playing</h3>
+                <h3 class="modal_title">Please, sign up for playing</h3>
                 <form class="regModal_form" id="form">
                     <div  class="regModal_formfield">
                         <label  >
