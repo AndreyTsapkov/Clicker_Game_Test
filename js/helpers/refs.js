@@ -2,6 +2,10 @@ const refs = {
   game: document.querySelector(".game"),
   body: document.querySelector("main"),
   monster: document.querySelector(".monster"),
+  score: document.querySelector(".score"),
+  userScore: document.querySelector(".user_score"),
+  level: document.querySelector(".level"),
+  monsterHp: document.querySelector(".monsterHp"),
 
   modalRegBackdrop: document.querySelector(".modalReg__backdrop"),
   scoreModalBackdrop: document.querySelector(".scoreModal__backdrop"),
