@@ -1,7 +1,7 @@
 import refs from "./helpers/refs.js";
-import headerUserScoreTemp from "./templates/headerUserScoreTemp";
+import headerUserScoreTemp from "./templates/headerUserScoreTemp.js";
 
-const headerUserscore = (currentLevel, score, monsterHp) => {
+const headerUserScore = (currentLevel, score, monsterHp) => {
   const render = () => {
     refs.userScore.innerHTML = "";
     refs.userScore.insertAdjacentHTML(
@@ -9,4 +9,7 @@ const headerUserscore = (currentLevel, score, monsterHp) => {
       headerUserScoreTemp(currentLevel, score, monsterHp)
     );
   };
+  render();
 };
+
+export default headerUserScore;
