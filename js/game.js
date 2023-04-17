@@ -36,21 +36,23 @@ function changeMonster() {
   refs.monster.insertAdjacentHTML("beforeend", monsterImage());
 }
 
+function changeLevel() {
+  currentLevel++;
+  currentLevelData = gameData[currentLevel - 1];
+  monsterHp = currentLevelData.monsterHp;
+  headerUserScore(currentLevel, score, monsterHp);
+  changeBgImg();
+  changeMonster();
+}
+
 const handleMonsterClick = (event) => {
   if (event.target.tagName === "IMG") {
     score++;
     monsterHp--;
   }
   if (monsterHp === 0) {
-    currentLevel++;
-    console.log(currentLevel);
-    currentLevelData = gameData[currentLevel - 1];
-    console.log(currentLevelData);
-    monsterHp = currentLevelData.monsterHp;
-    headerUserScore(currentLevel, score, monsterHp);
-    console.log(monsterHp);
-    changeBgImg();
-    changeMonster();
+    changeLevel();
+
     return;
   }
 
@@ -62,5 +64,4 @@ refs.monster.addEventListener("click", handleMonsterClick);
 
 changeBgImg();
 changeMonster();
-console.log(gameData[currentLevel - 1]);
 headerUserScore(currentLevel, score, monsterHp);
